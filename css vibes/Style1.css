@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'kanit', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cabeçalho {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid gray;
+    padding: 10px;
+    justify-content: center;
+    width: 90%;
+    font-size: 25px;
+    background-color: aliceblue;
+}
+.cabeçalho img{
+    width: 100px;
+    
+}
+
+.Log {
+    color: aliceblue;
+    background-color: rgba(224, 21, 21, 0.897);
+    width: 150px;
+    font-size: 30px;
+}
+.Reg {
+    color: aliceblue;
+    background-color: rgba(224, 21, 21, 0.897);
+    width: 150px;
+    font-size: 30px;
+}
+
+
+.sapato,
+.cinto,
+.bolsa {
+    font-size: 35px;
+    color: white;
+    background-color: antiquewhite;
+    border-radius: 20%;
+    width: 150px;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+
+}
+
+
+.titulo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 10px;
+    justify-content: center;
+    
+    width: 55%;
+}
+
+.titulo h2 {
+    font-size: 55px;
+    color: aliceblue;
+    text-shadow: 
+-2px -2px 0 #000,  
+2px -2px 0 #000,
+-2px 2px 0 #000,
+2px 2px 0 #000;
+}
+
+.produto1,
+.produto2,
+.produto3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
+}
+
+.produto1 img,
+.produto2 img,
+.produto3 img {
+    width: 200px;
+    transition: transform 0.1s ease; 
+}
+
+.produto1 img:hover,
+.produto2 img:hover,
+.produto3 img:hover {
+    transform: scale(1.15); 
+}
+
+.cabeçalho a:hover {
+    background-color: rgb(255, 231, 200);
+}
+
+.Log:hover,
+.Reg:hover {
+color: rgba(216, 19, 19, 0.87);
+}
+/* Estilos gerais */
+
+/* Estilos gerais */
+
+/* Estilos para telas menores que 600 pixels de largura (Mobile) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: contain; /* ou outra propriedade apropriada para telas pequenas */
+    }
+
+    .cabeçalho {
+        flex-direction: column;
+    }
+
+    .cabeçalho img {
+        width: 80px;
+    }
+
+    .Log,
+    .Reg,
+    .sapato,
+    .cinto,
+    .bolsa {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .titulo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .titulo h2 {
+        font-size: 30px; /* Reduzir o tamanho da fonte para telas menores */
+    }
+
+    .produto1,
+    .produto2,
+    .produto3 {
+        flex-direction: column;
+    }
+
+    .produto1 img,
+    .produto2 img,
+    .produto3 img {
+        width: 100%;
+    }
+}
+
+/* Estilos para telas entre 601 e 1024 pixels de largura (Tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .cabeçalho img {
+        width: 120px;
+    }
+
+    .Log,
+    .Reg,
+    .sapato,
+    .cinto,
+    .bolsa {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .titulo h2 {
+        font-size: 40px; /* Reduzir o tamanho da fonte para telas de tablet */
+    }
+}
+
+/* Estilos para telas maiores que 1024 pixels de largura (Desktop) */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    .cabeçalho img {
+        width: 150px;
+    }
+
+    .Log,
+    .Reg,
+    .sapato,
+    .cinto,
+    .bolsa {
+        width: 150px;
+        margin: 15px;
+    }
+
+    .titulo h2 {
+        font-size: 45px; /* Reduzir o tamanho da fonte para telas de desktop */
+    }
+}
+
+/* Estilos adicionais para telas maiores que 1600 pixels de largura (Grandes telas) */
+@media only screen and (min-width: 1601px) {
+    /* Adicione estilos adicionais conforme necessário para telas muito grandes */
+}
